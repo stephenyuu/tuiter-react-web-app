@@ -1,11 +1,48 @@
 body {
     background-color: black;
     color: white;
+    margin: 16px;
+    border: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+}
+
+#wd-search-bar-container {
+    display: flex;
+    width: 75%;
+}
+
+#wd-search-icon {
+    position: relative;
+    top: 8px;
+    left: 35px;
+    width: 25px;
+    height: 25px;
+}
+
+#wd-search-bar {
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(47, 51, 54);
+    padding-left: 50px;
+}
+
+#wd-settings-menu-icon {
+    text-decoration: none;
+    color: rgb(29, 161, 242);
+    font-size: 35px;
 }
 
 .wd-account-profile-pic {
     width: 20px;
 }
+
 .wd-verified-check {
     width: 20px;
 }
