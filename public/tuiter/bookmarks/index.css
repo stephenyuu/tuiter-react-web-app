@@ -1,0 +1,11 @@
+body {
+    background-color: black;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    color: white;
+    margin: 16px;
+    border: solid;
+    border-color: rgb(47, 51, 54);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
