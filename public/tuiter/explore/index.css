@@ -1,9 +1,13 @@
 body {
     background-color: black;
+    font-family: 'Helvetica', 'Arial', sans-serif;
     color: white;
     margin: 16px;
     border: solid;
     border-color: rgb(47, 51, 54);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .wd-header {
@@ -42,6 +46,9 @@ body {
 
 .wd-navbar {
     margin-top: 16px;
+    border-bottom: solid;
+    border-width: 3px;
+    border-color: rgb(47, 51, 54);
 }
 
 ul {
@@ -52,7 +59,7 @@ ul {
 
 .wd-navbar-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .wd-navbar-link-title {
@@ -69,6 +76,45 @@ ul {
     border-color: rgb(29, 161, 242);
 }
 
+.wd-post-section {
+    margin-top: 16px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.wd-post {
+    padding: 16px;
+    border: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-post-spacing {
+    margin-top: 10px;
+}
+
+.wd-post-primary {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.wd-post-secondary {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-post-with-image {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-post-account {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
 .wd-account-profile-pic {
     width: 20px;
 }
@@ -78,5 +124,7 @@ ul {
 }
 
 .wd-article-image {
-    width: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
 }
