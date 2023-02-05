@@ -12,9 +12,9 @@ body {
     padding: 8px 12px;
 }
 
-#wd-search-bar-container {
+.wd-search-bar-container {
     display: flex;
-    width: 75%;
+    width: 90%;
 }
 
 #wd-search-icon {
@@ -25,8 +25,9 @@ body {
     height: 25px;
 }
 
-#wd-search-bar {
+.wd-search-bar {
     width: 100%;
+    color: white;
     border: none;
     border-radius: 30px;
     background-color: rgb(47, 51, 54);
@@ -37,6 +38,32 @@ body {
     text-decoration: none;
     color: rgb(29, 161, 242);
     font-size: 35px;
+}
+
+.wd-navbar {
+    margin-top: 16px;
+}
+
+.wd-navbar-links {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wd-navbar-link-title {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 16px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-selected-link {
+    color: rgb(29, 161, 242);
+    border-bottom: solid;
+    border-bottom-width: 5px;
+    border-color: rgb(29, 161, 242);
 }
 
 .wd-account-profile-pic {
