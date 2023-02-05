@@ -44,12 +44,15 @@ body {
     margin-top: 16px;
 }
 
-.wd-navbar-links {
-    display: flex;
-    justify-content: space-around;
+ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+}
+
+.wd-navbar-links {
+    display: flex;
+    justify-content: space-around;
 }
 
 .wd-navbar-link-title {
