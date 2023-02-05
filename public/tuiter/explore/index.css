@@ -93,17 +93,6 @@ ul {
     margin-top: 10px;
 }
 
-.wd-post-primary {
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
-}
-
-.wd-post-secondary {
-    font-size: 13px;
-    color: rgb(110, 118, 125);
-}
-
 .wd-post-with-image {
     display: flex;
     justify-content: space-between;
