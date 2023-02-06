@@ -93,13 +93,13 @@ ul {
     margin-top: 10px;
 }
 
-.wd-primary {
+.wd-primary-text {
     font-size: 18px;
     color: white;
     font-weight: bold;
 }
 
-.wd-secondary {
+.wd-secondary-text {
     font-size: 13px;
     color: rgb(110, 118, 125);
 }
@@ -109,7 +109,7 @@ ul {
     justify-content: space-between;
 }
 
-.wd-post-account {
+.wd-user {
     display: flex;
     align-items: center;
     gap: 3px;
