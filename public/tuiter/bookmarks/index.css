@@ -9,3 +9,51 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wd-header {
+    padding: 12px 16px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wd-secondary {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-bookmarked-post {
+    display: flex;
+}
+
+.wd-bookmarked-post-content {
+    padding: 12px 12px;
+}
+
+.wd-profile-pic {
+    padding: 12px 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.wd-author-name {
+    font-size: 15px;
+    color: white;
+}
+
+.wd-author-handle {
+    color: rgb(110, 118, 125);
+}
