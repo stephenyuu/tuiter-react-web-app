@@ -52,9 +52,6 @@ ul {
 .wd-navbar {
     margin-top: 16px;
     border-bottom: 3px solid rgb(47, 51, 54);
-}
-
-.wd-navbar-links {
     display: flex;
     justify-content: space-between;
 }
