@@ -3,8 +3,7 @@ body {
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
     color: white;
     margin: 16px;
-    border: solid;
-    border-color: rgb(47, 51, 54);
+    border: 1px solid rgb(47, 51, 54);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -52,9 +51,7 @@ ul {
 
 .wd-navbar {
     margin-top: 16px;
-    border-bottom: solid;
-    border-width: 3px;
-    border-color: rgb(47, 51, 54);
+    border-bottom: 3px solid rgb(47, 51, 54);
 }
 
 .wd-navbar-links {
@@ -71,9 +68,7 @@ ul {
 
 .wd-selected-link {
     color: rgb(29, 161, 242);
-    border-bottom: solid;
-    border-bottom-width: 5px;
-    border-color: rgb(29, 161, 242);
+    border-bottom: 5px solid rgb(29, 161, 242);
 }
 
 .wd-post-section {
@@ -85,8 +80,7 @@ ul {
 
 .wd-post {
     padding: 16px;
-    border: solid;
-    border-color: rgb(47, 51, 54);
+    border: 1px solid rgb(47, 51, 54);
 }
 
 .wd-post li {
