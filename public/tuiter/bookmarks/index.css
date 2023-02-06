@@ -3,8 +3,7 @@ body {
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
     color: white;
     margin: 16px;
-    border: solid;
-    border-color: rgb(47, 51, 54);
+    border: 1px solid rgb(47, 51, 54);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -18,28 +17,31 @@ ul {
 
 .wd-header {
     padding: 12px 16px;
-    border: solid;
-    border-width: 1px;
-    border-color: rgb(47, 51, 54);
 }
 
-.wd-title {
-    color: white;
+.wd-title-text {
     font-size: 20px;
     font-weight: bold;
 }
 
-.wd-secondary {
+.wd-secondary-text {
     font-size: 13px;
     color: rgb(110, 118, 125);
 }
 
 .wd-bookmarked-post {
     display: flex;
+    justify-content: flex-start;
+    border: 1px solid rgb(47, 51, 54);
+    padding-bottom: 12px;
 }
 
-.wd-bookmarked-post-content {
-    padding: 12px 12px;
+.wd-post {
+    max-width: 506px;
+}
+
+.wd-post-content {
+    padding: 12px 16px 12px 0px;
 }
 
 .wd-profile-pic {
@@ -49,11 +51,56 @@ ul {
     border-radius: 50%;
 }
 
-.wd-author-name {
+.wd-default-font-size {
     font-size: 15px;
-    color: white;
 }
 
-.wd-author-handle {
+.wd-secondary-color {
     color: rgb(110, 118, 125);
+}
+
+.wd-linked-content {
+    border: 1px solid rgb(47, 51, 54);
+    border-radius: 5%;
+}
+
+.wd-linked-content-image {
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.wd-linked-content-text {
+    padding: 0px 12px 12px 12px;
+    margin-top: 12px;
+}
+
+.wd-linked-content-title {
+    font-weight: bold;
+}
+
+.wd-linked-content-text li {
+    margin-top: 10px;
+}
+
+.wd-reactions {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-reactions a {
+    text-decoration: none;
+    color: rgb(110, 118, 125);
+}
+
+.wd-icon {
+    color: rgb(110, 118, 125);
+    font-size: 20px;
+    padding-right: 12px;
+}
+
+.wd-liked {
+    color: red;
 }

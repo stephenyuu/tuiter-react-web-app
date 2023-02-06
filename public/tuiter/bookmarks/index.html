@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>Bookmarks</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      rel="stylesheet"
+    />
     <link href="index.css" rel="stylesheet" />
   </head>
 
@@ -11,40 +15,161 @@
     <a href="../navigation.html">Back</a>
 
     <!--header section with title and handle-->
-    <div class="wd-header">
-      <ul>
-        <li class="wd-title">Bookmarks</li>
-        <li class="wd-secondary">@WebDev</li>
-      </ul>
-    </div>
+    <ul class="wd-header">
+      <li class="wd-title-text">Bookmarks</li>
+      <li class="wd-secondary-text">@WebDev</li>
+    </ul>
 
     <!--main content section with bookmarked posts-->
-    <div class="wd-bookmarked-post">
-      <img
-        class="wd-profile-pic"
-        src="../images/robert-zubrin-pfp.jpeg"
-        alt="Profile Picture"
-      />
-      <div class="wd-bookmarked-post-content">
-        <ul>
-          <li>Robert Zubrin <span>@robert_zubrin · Jul 31</span></li>
-          <li>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed
-            tristique augue, ac aliquet augue. Ut laoreet volutpat metus.
-            Suspendisse ut suscipit massa. Donec maximus hendrerit elit, eu
-            feugiat erat pretium nec. Integer vitae velit neque. Sed quis
-            sodales eros. Nullam tempor, elit eget dapibus pharetra, lectus arcu
-            congue odio, id vehicula eros dui eu leo. Sed mattis, purus id
-            malesuada tempus, nulla leo cursus eros, a auctor quam velit eget
-            metus. Praesent in massa iaculis, aliquam turpis mollis, pretium
-            urna.
-          </li>
-        </ul>
-        <div class="wd-linked-content">
-
+    <div>
+      <div class="wd-bookmarked-post">
+        <img
+          class="wd-profile-pic"
+          src="../images/robert-zubrin-pfp.jpeg"
+          alt="Profile Picture"
+        />
+        <div class="wd-post">
+          <ul class="wd-post-content">
+            <li class="wd-general-font-size">
+              Robert Zubrin
+              <span class="wd-secondary-color">@robert_zubrin · Jul 31</span>
+            </li>
+            <li class="wd-default-font-size">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              sed tristique augue, ac aliquet augue. Ut laoreet volutpat metus.
+              Suspendisse ut suscipit massa. Donec maximus hendrerit elit, eu
+              feugiat erat pretium nec. Integer vitae velit neque. Sed quis
+              sodales eros. Nullam tempor, elit eget dapibus pharetra, lectus
+              arcu congue odio, id vehicula eros dui eu leo. Sed mattis, purus
+              id malesuada tempus, nulla leo cursus eros, a auctor quam velit
+              eget metus. Praesent in massa iaculis, aliquam turpis mollis,
+              pretium urna.
+            </li>
+          </ul>
+          <div class="wd-linked-content">
+            <img
+              class="wd-linked-content-image"
+              src="../images/bookmark-post-one-image.jpeg"
+              alt="Bull on Wall Street"
+            />
+            <ul class="wd-linked-content-text">
+              <li class="wd-default-font-size wd-linked-content-title">
+                In nec dolor eu urna ornare rhoncus vel non libero...
+              </li>
+              <li class="wd-secondary-color wd-linked-content-body">
+                Nullam gravida et turpis dictum accumsan. Vivamus congue
+                facilisis laoreet. Nulla quis porttitor odio. Nullam rutrum,
+                ipsum eu venenatis molestie, lorem sapien congue sem, vitae
+                molestie dui ligula a nisi.
+              </li>
+              <li class="wd-linked-content-link">
+                <img src="../images/link-icon.png" alt="Link Icon" />
+                abc.com
+              </li>
+            </ul>
+          </div>
+          <ul class="wd-reactions">
+            <li>
+              <a href="#">
+                <i class="fa-regular fa-comment wd-icon"></i>
+                22
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-retweet wd-icon"></i>
+                9
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-heart wd-icon wd-liked"></i>
+                <span class="wd-liked">37</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-share-from-square wd-icon"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div>
+      </div>
 
+      <div class="wd-bookmarked-post">
+        <img
+          class="wd-profile-pic"
+          src="../images/doge-pfp.webp"
+          alt="Profile Picture"
+        />
+        <div class="wd-post">
+          <ul class="wd-post-content">
+            <li class="wd-general-font-size">
+              DOGE
+              <span class="wd-secondary-color">@doge · Feb 5</span>
+            </li>
+            <li class="wd-default-font-size">
+              Curabitur et mauris ornare, cursus libero eget, pellentesque
+              justo. Pellentesque aliquam posuere lacus nec vehicula. Aenean
+              placerat quam eget felis lobortis vulputate. Pellentesque habitant
+              morbi tristique senectus et netus et malesuada fames ac turpis
+              egestas. Mauris facilisis scelerisque hendrerit. Fusce condimentum
+              elit et eleifend convallis. Integer felis lorem, tincidunt non
+              dolor quis, ultrices sollicitudin sapien. Morbi at mauris
+              dignissim, porttitor dolor sit amet, tincidunt dui. Vivamus sit
+              amet suscipit nisi, a tempor mi. Nulla non sem dignissim arcu
+              sagittis ultricies quis ac nunc. Nullam ultrices auctor sem at
+              efficitur. In ac condimentum nulla, id semper mauris. Vivamus
+              porta nulla placerat, condimentum massa vitae, commodo lorem.
+            </li>
+          </ul>
+          <div class="wd-linked-content">
+            <img
+              class="wd-linked-content-image"
+              src="../images/to-the-moon.jpeg"
+              alt="To the Moon"
+            />
+            <ul class="wd-linked-content-text">
+              <li class="wd-default-font-size wd-linked-content-title">
+                Etiam pharetra cursus commodo. Pellentesque ultricies...
+              </li>
+              <li class="wd-secondary-color wd-linked-content-body">
+                Praesent mauris sapien, consequat vitae ante vel, mattis feugiat
+                felis. Mauris consectetur eleifend ligula, ac varius nunc
+                imperdiet ut. Phasellus commodo nulla sit amet mi rhoncus, vitae
+                molestie dolor pellentesque.
+              </li>
+              <li class="wd-linked-content-link">
+                <img src="../images/link-icon.png" alt="Link Icon" />
+                doge.com
+              </li>
+            </ul>
+          </div>
+          <ul class="wd-reactions">
+            <li>
+              <a href="#">
+                <i class="fa-regular fa-comment wd-icon"></i>
+                1.1M
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-retweet wd-icon"></i>
+                5B
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-heart wd-icon wd-liked"></i>
+                <span class="wd-liked">7B</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-share-from-square wd-icon"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
