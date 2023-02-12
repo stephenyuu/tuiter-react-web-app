@@ -1,8 +1,6 @@
 body {
-    background-color: black;
+    background-color: white;
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
-    color: white;
-    margin: 16px;
     border: 1px solid rgb(47, 51, 54);
     min-height: 100vh;
     display: flex;
@@ -13,6 +11,14 @@ ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+}
+
+.more-icon {
+    padding-left: 4px;
+}
+
+.fa-circle {
+    font-size: 24px;
 }
 
 .wd-header {

@@ -3,139 +3,191 @@
   <head>
     <meta charset="UTF-8" />
     <title>Explore</title>
+    <link
+      href="../../vendors/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
     <link href="./index.css" rel="stylesheet" />
-    <link href="../styles.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!--back button to return to navigation page-->
-    <a href="../navigation.html">Back</a>
+    <div class="container mt-3">
+      <!--back button to return to navigation page-->
+      <a href="../navigation.html" class="btn btn-primary">Back</a>
 
-    <!--header section with search bar and settings menu icon-->
-    <div class="wd-header">
-      <div class="wd-search-bar-container">
-        <img
-          id="wd-search-icon"
-          src="../images/magnifying-glass-icon.png"
-          alt="Search Icon"
-        />
-        <input class="wd-search-bar" placeholder="Search Tuiter" />
-      </div>
+      <!--<div class='row'> with 3 <div class='col'> to create 3 columns of page-->
+      <div class="row mt-3">
+        <!--left navigation sidebar with links to various screens throughout Tuiter-->
+        <div class="col-xxl-2">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="../home.html" class="list-group-item list-group-item-action">
+              <i class="fas fa-home"></i> Home
+            </a>
+            <a href="#" class="list-group-item list-group-item-action active">
+              <i class="fas fa-hashtag"></i> Explore
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-bell"></i> Notifications
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-envelope"></i> Messages
+            </a>
+            <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
+              <i class="fas fa-bookmark"></i> Bookmarks
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-list"></i> Lists
+            </a>
+            <a href="../profile.html" class="list-group-item list-group-item-action">
+              <i class="fas fa-user"></i> Profile
+            </a>
+            <a href="#" class="list-group-item list-group-item-action more-icon">
+              <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-1x"></i>
+                <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+              </span>
+              More
+            </a>
+            <a class="mt-2 btn btn-primary rounded-pill">Tuit</a>
+          </div>
+        </div>
+        <!--header section with search bar and settings menu icon-->
+        <div class="col-xxl-7">
+          <div class="wd-header">
+            <div class="wd-search-bar-container">
+              <img
+                id="wd-search-icon"
+                src="../images/magnifying-glass-icon.png"
+                alt="Search Icon"
+              />
+              <input class="wd-search-bar" placeholder="Search Tuiter" />
+            </div>
 
-      <a id="wd-settings-menu-icon" href="explore-settings.html">&#9881;</a>
-    </div>
+            <a id="wd-settings-menu-icon" href="explore-settings.html"
+              >&#9881;</a
+            >
+          </div>
 
-    <!--navbar section-->
-    <ul class="wd-navbar">
-      <li class="wd-navbar-link-title wd-selected-link">For You</li>
-      <li class="wd-navbar-link-title">Trending</li>
-      <li class="wd-navbar-link-title">COVID-19</li>
-      <li class="wd-navbar-link-title">News</li>
-      <li class="wd-navbar-link-title">Sports</li>
-      <li class="wd-navbar-link-title">Entertainment</li>
-    </ul>
+          <!--navbar section-->
+          <ul class="wd-navbar">
+            <li class="wd-navbar-link-title wd-selected-link">For You</li>
+            <li class="wd-navbar-link-title">Trending</li>
+            <li class="wd-navbar-link-title">COVID-19</li>
+            <li class="wd-navbar-link-title">News</li>
+            <li class="wd-navbar-link-title">Sports</li>
+            <li class="wd-navbar-link-title">Entertainment</li>
+          </ul>
 
-    <!--main content section with posts-->
-    <div class="wd-post-section">
-      <div class="wd-post">
-        <ul>
-          <li class="wd-secondary-text">Trending in Sports</li>
-          <li class="wd-primary-text">Stephen Curry</li>
-          <li class="wd-secondary-text">1M Tuits</li>
-        </ul>
-      </div>
+          <!--main content section with posts-->
+          <div class="wd-post-section">
+            <div class="wd-post">
+              <ul>
+                <li class="wd-secondary-text">Trending in Sports</li>
+                <li class="wd-primary-text">Stephen Curry</li>
+                <li class="wd-secondary-text">1M Tuits</li>
+              </ul>
+            </div>
 
-      <div class="wd-post">
-        <ul>
-          <li class="wd-secondary-text">Tech · Trending</li>
-          <li class="wd-primary-text">Elon Musk</li>
-          <li class="wd-secondary-text">900K Tuits</li>
-        </ul>
-      </div>
+            <div class="wd-post">
+              <ul>
+                <li class="wd-secondary-text">Tech · Trending</li>
+                <li class="wd-primary-text">Elon Musk</li>
+                <li class="wd-secondary-text">900K Tuits</li>
+              </ul>
+            </div>
 
-      <div class="wd-post wd-post-with-image">
-        <ul>
-          <li class="wd-user">
-            <img
-              class="wd-profile-pic"
-              src="../images/bloomberg-logo.png"
-              alt="Bloomberg Profile Picture"
-            />
-            Bloomberg
-            <img
-              class="wd-verified-check"
-              src="../images/verified-check.png"
-              alt="Verified Check"
-            />
-            <span class="wd-secondary-text">· Yesterday</span>
-          </li>
-          <li class="wd-primary-text">
-            When Does Elon Musk Sleep? Billionaire Speaks About His Daily
-            Routine
-          </li>
-        </ul>
-        <img
-          class="wd-article-image"
-          src="../images/elon-musk-article-image.jpeg"
-          alt="Elon Musk Article"
-        />
-      </div>
+            <div class="wd-post wd-post-with-image">
+              <ul>
+                <li class="wd-user">
+                  <img
+                    class="wd-profile-pic"
+                    src="../images/bloomberg-logo.png"
+                    alt="Bloomberg Profile Picture"
+                  />
+                  Bloomberg
+                  <img
+                    class="wd-verified-check"
+                    src="../images/verified-check.png"
+                    alt="Verified Check"
+                  />
+                  <span class="wd-secondary-text">· Yesterday</span>
+                </li>
+                <li class="wd-primary-text">
+                  When Does Elon Musk Sleep? Billionaire Speaks About His Daily
+                  Routine
+                </li>
+              </ul>
+              <img
+                class="wd-article-image"
+                src="../images/elon-musk-article-image.jpeg"
+                alt="Elon Musk Article"
+              />
+            </div>
 
-      <div class="wd-post wd-post-with-image">
-        <ul>
-          <li class="wd-secondary-text">COVID-19 · LIVE</li>
-          <li class="wd-primary-text">
-            COVID-19: News and Updates for Massachusetts
-          </li>
-        </ul>
-        <img
-          class="wd-article-image"
-          src="../images/covid-19-article-image.jpeg"
-          alt="COVID-19 Article"
-        />
-      </div>
+            <div class="wd-post wd-post-with-image">
+              <ul>
+                <li class="wd-secondary-text">COVID-19 · LIVE</li>
+                <li class="wd-primary-text">
+                  COVID-19: News and Updates for Massachusetts
+                </li>
+              </ul>
+              <img
+                class="wd-article-image"
+                src="../images/covid-19-article-image.jpeg"
+                alt="COVID-19 Article"
+              />
+            </div>
 
-      <div class="wd-post wd-post-with-image">
-        <ul>
-          <li class="wd-user">
-            <img
-              class="wd-profile-pic"
-              src="../images/espn-logo.png"
-              alt="ESPN Profile Picture"
-            />
-            ESPN
-            <img
-              class="wd-verified-check"
-              src="../images/verified-check.png"
-              alt="Verified Check"
-            />
-            <span class="wd-secondary-text">· 5h ago</span>
-          </li>
-          <li class="wd-primary-text">
-            Lebron James on the Verge of Surpassing Kareem Abdul-Jabbar as the
-            NBA's All-Time Leading Scorer
-          </li>
-        </ul>
-        <img
-          class="wd-article-image"
-          src="../images/lebron-james-article-image.jpeg"
-          alt="Lebron James Article"
-        />
-      </div>
+            <div class="wd-post wd-post-with-image">
+              <ul>
+                <li class="wd-user">
+                  <img
+                    class="wd-profile-pic"
+                    src="../images/espn-logo.png"
+                    alt="ESPN Profile Picture"
+                  />
+                  ESPN
+                  <img
+                    class="wd-verified-check"
+                    src="../images/verified-check.png"
+                    alt="Verified Check"
+                  />
+                  <span class="wd-secondary-text">· 5h ago</span>
+                </li>
+                <li class="wd-primary-text">
+                  Lebron James on the Verge of Surpassing Kareem Abdul-Jabbar as
+                  the NBA's All-Time Leading Scorer
+                </li>
+              </ul>
+              <img
+                class="wd-article-image"
+                src="../images/lebron-james-article-image.jpeg"
+                alt="Lebron James Article"
+              />
+            </div>
 
-      <div class="wd-post wd-post-with-image">
-        <ul>
-          <li class="wd-secondary-text">NFL Football · LIVE</li>
-          <li class="wd-primary-text">
-            Preview of Super Bowl LVII: Kansas City Chiefs vs. Philadelphia
-            Eagles
-          </li>
-        </ul>
-        <img
-          class="wd-article-image"
-          src="../images/super-bowl-lvii-article-image.png"
-          alt="Super Bowl LVII Article"
-        />
+            <div class="wd-post wd-post-with-image">
+              <ul>
+                <li class="wd-secondary-text">NFL Football · LIVE</li>
+                <li class="wd-primary-text">
+                  Preview of Super Bowl LVII: Kansas City Chiefs vs.
+                  Philadelphia Eagles
+                </li>
+              </ul>
+              <img
+                class="wd-article-image"
+                src="../images/super-bowl-lvii-article-image.png"
+                alt="Super Bowl LVII Article"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--right sidebar with links to other users you might want to follow-->
       </div>
     </div>
   </body>
