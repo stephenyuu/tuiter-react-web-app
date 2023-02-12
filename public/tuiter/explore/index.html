@@ -56,7 +56,7 @@
             </a>
             <a href="#" class="list-group-item list-group-item-action ps-1">
               <span class="fa-stack">
-                <i class="fas fa-circle fa-stack-1x wd-circle-background"></i>
+                <i class="fas fa-circle fa-stack-1x wd-circle-size"></i>
                 <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
               </span>
               More
@@ -75,123 +75,127 @@
               <span class="input-group-text bg-transparent wd-search-bar-icon">
                 <i class="fas fa-search"></i>
               </span>
-              <input type="text" class="form-control wd-search-bar-container" />
+              <input
+                type="text"
+                class="form-control wd-search-bar-container"
+                placeholder="Search Tuiter"
+              />
             </div>
-            <a id="wd-settings-menu-icon" href="explore-settings.html"
-              >&#9881;</a
-            >
+            <a href="explore-settings.html">
+              <i class="fas fa-cog wd-cog-size"></i>
+            </a>
           </div>
 
           <!--navbar section-->
-          <ul class="wd-navbar">
-            <li class="wd-navbar-link-title wd-selected-link">For You</li>
-            <li class="wd-navbar-link-title">Trending</li>
-            <li class="wd-navbar-link-title">COVID-19</li>
-            <li class="wd-navbar-link-title">News</li>
-            <li class="wd-navbar-link-title">Sports</li>
-            <li class="wd-navbar-link-title">Entertainment</li>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="for-you.html">For you</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trending.html">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sports.html">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="entertainment.html">Entertainment</a>
+            </li>
           </ul>
 
           <!--main content section with posts-->
-          <div class="wd-post-section">
-            <div class="wd-post">
-              <ul>
-                <li class="wd-secondary-text">Trending in Sports</li>
-                <li class="wd-primary-text">Stephen Curry</li>
-                <li class="wd-secondary-text">1M Tuits</li>
-              </ul>
+          <div class="wd-post-section mt-3">
+            <!--picture with text overlay-->
+            <div class="position-relative">
+              <img
+                src="../images/spacex-starship.jpeg"
+                alt="SpaceX's Starship"
+                class="img-fluid"
+              />
+              <div class="wd-picture-caption">
+                <h1>SpaceX's Starship</h1>
+              </div>
             </div>
 
-            <div class="wd-post">
+            <!--other posts-->
+            <div
+              class="list-group-item p-2 d-flex justify-content-between"
+            >
               <ul>
-                <li class="wd-secondary-text">Tech · Trending</li>
-                <li class="wd-primary-text">Elon Musk</li>
-                <li class="wd-secondary-text">900K Tuits</li>
-              </ul>
-            </div>
-
-            <div class="wd-post wd-post-with-image">
-              <ul>
-                <li class="wd-user">
-                  <img
-                    class="wd-profile-pic"
-                    src="../images/bloomberg-logo.png"
-                    alt="Bloomberg Profile Picture"
-                  />
-                  Bloomberg
-                  <img
-                    class="wd-verified-check"
-                    src="../images/verified-check.png"
-                    alt="Verified Check"
-                  />
-                  <span class="wd-secondary-text">· Yesterday</span>
+                <li class="text-secondary">Web Development</li>
+                <li>
+                  <span class="text-dark fw-bold">ReactJS</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span class="text-secondary">- 2h</span>
                 </li>
-                <li class="wd-primary-text">
-                  When Does Elon Musk Sleep? Billionaire Speaks About His Daily
-                  Routine
+                <li class="text-dark fw-bold">
+                  React.js is a component based front end library that makes it
+                  very easy to build Single Page Appications or SPAs
                 </li>
               </ul>
               <img
-                class="wd-article-image"
-                src="../images/elon-musk-article-image.jpeg"
-                alt="Elon Musk Article"
+                class="wd-article-image rounded"
+                src="../images/react-logo.png"
+                alt="ReactJS Logo"
               />
             </div>
 
-            <div class="wd-post wd-post-with-image">
+            <div
+              class="list-group-item p-2 d-flex justify-content-between"
+            >
               <ul>
-                <li class="wd-secondary-text">COVID-19 · LIVE</li>
-                <li class="wd-primary-text">
-                  COVID-19: News and Updates for Massachusetts
+                <li class="text-secondary">Web Development</li>
+                <li>
+                  <span class="text-dark fw-bold">JavaScript</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span class="text-secondary">- 2h</span>
                 </li>
+                <li class="text-dark fw-bold">
+                  JavaScript is a programming language that can be run on
+                  browsers as well as desktops
+                </li>
+                <li class="text-secondary">123K Tweets</li>
               </ul>
               <img
-                class="wd-article-image"
-                src="../images/covid-19-article-image.jpeg"
-                alt="COVID-19 Article"
+                class="wd-article-image rounded"
+                src="../images/javascript-logo.png"
+                alt="JavaScript Logo"
               />
             </div>
 
-            <div class="wd-post wd-post-with-image">
+            <div
+              class="list-group-item p-2 d-flex justify-content-between"
+            >
               <ul>
-                <li class="wd-user">
-                  <img
-                    class="wd-profile-pic"
-                    src="../images/espn-logo.png"
-                    alt="ESPN Profile Picture"
-                  />
-                  ESPN
-                  <img
-                    class="wd-verified-check"
-                    src="../images/verified-check.png"
-                    alt="Verified Check"
-                  />
-                  <span class="wd-secondary-text">· 5h ago</span>
-                </li>
-                <li class="wd-primary-text">
-                  Lebron James on the Verge of Surpassing Kareem Abdul-Jabbar as
-                  the NBA's All-Time Leading Scorer
-                </li>
+                <li class="text-secondary">Web Development</li>
+                <li class="text-dark fw-bold">jQuery</li>
+                <li class="text-secondary">123K Tweets</li>
               </ul>
               <img
-                class="wd-article-image"
-                src="../images/lebron-james-article-image.jpeg"
-                alt="Lebron James Article"
+                class="wd-article-image rounded"
+                src="../images/jquery-logo.png"
+                alt="jQuery Logo"
               />
             </div>
 
-            <div class="wd-post wd-post-with-image">
+            <div
+              class="list-group-item p-2 d-flex justify-content-between"
+            >
               <ul>
-                <li class="wd-secondary-text">NFL Football · LIVE</li>
-                <li class="wd-primary-text">
-                  Preview of Super Bowl LVII: Kansas City Chiefs vs.
-                  Philadelphia Eagles
+                <li class="text-secondary">Web Development</li>
+                <li>
+                  <span class="text-dark fw-bold">NodeJS</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span class="text-secondary">- 2h</span>
                 </li>
+                <li class="text-secondary">123K Tweets</li>
               </ul>
               <img
-                class="wd-article-image"
-                src="../images/super-bowl-lvii-article-image.png"
-                alt="Super Bowl LVII Article"
+                class="wd-article-image rounded"
+                src="../images/nodejs-logo.png"
+                alt="NodeJS Logo"
               />
             </div>
           </div>

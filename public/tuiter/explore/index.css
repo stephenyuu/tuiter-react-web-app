@@ -1,7 +1,6 @@
 body {
     background-color: white;
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
-    border: 1px solid rgb(47, 51, 54);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -13,13 +12,14 @@ ul {
     padding: 0px;
 }
 
-.wd-circle-background {
+.wd-circle-size {
     font-size: 24px;
 }
 
 .wd-header {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
     padding: 8px 12px;
 }
 
@@ -35,6 +35,11 @@ ul {
     border-bottom-right-radius: 30px;
 }
 
+.wd-cog-size {
+    font-size: 30px;
+}
+
+/*
 #wd-search-icon {
     position: relative;
     top: 8px;
@@ -60,7 +65,6 @@ ul {
 }
 
 .wd-navbar {
-    margin-top: 16px;
     border-bottom: 3px solid rgb(47, 51, 54);
     display: flex;
     justify-content: space-between;
@@ -77,14 +81,22 @@ ul {
     color: rgb(29, 161, 242);
     border-bottom: 5px solid rgb(29, 161, 242);
 }
+*/
 
 .wd-post-section {
-    margin-top: 16px;
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
 }
 
+.wd-picture-caption {
+    position: absolute;
+    top: 304px;
+    left: 8px;
+    color: white;
+}
+
+/*
 .wd-post {
     padding: 16px;
     border: 1px solid rgb(47, 51, 54);
@@ -114,19 +126,21 @@ ul {
     align-items: center;
     gap: 3px;
 }
+*/
 
 .wd-profile-pic {
     width: 45px;
     height: 45px;
 }
 
+/*
 .wd-verified-check {
     width: 20px;
     height: 20px;
 }
+*/
 
 .wd-article-image {
     width: 100px;
     height: 100px;
-    border-radius: 15%;
 }
