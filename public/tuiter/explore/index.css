@@ -90,10 +90,14 @@ ul {
 }
 
 .wd-picture-caption {
-    position: absolute;
-    top: 304px;
-    left: 8px;
+    position: relative;
     color: white;
+    bottom: 48px;
+    left: 8px;
+}
+
+.wd-reduce-whitespace {
+    margin-top: -48px;
 }
 
 /*
