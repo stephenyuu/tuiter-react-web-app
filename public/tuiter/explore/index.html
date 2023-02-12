@@ -19,7 +19,7 @@
       <!--<div class='row'> with 3 <div class='col'> to create 3 columns of page-->
       <div class="row mt-3">
         <!--left navigation sidebar with links to various screens throughout Tuiter-->
-        <div class="col-xxl-2">
+        <div class="col-2 col-md-3 col-lg-1 col-xl-2">
           <div class="list-group">
             <a href="#" class="list-group-item list-group-item-action">
               <i class="fab fa-twitter"></i>
@@ -28,38 +28,45 @@
               href="../home.html"
               class="list-group-item list-group-item-action"
             >
-              <i class="fas fa-home"></i> Home
+              <i class="fas fa-home"></i>
+              <span class="d-none d-xl-inline">Home</span>
             </a>
             <a href="#" class="list-group-item list-group-item-action active">
-              <i class="fas fa-hashtag"></i> Explore
+              <i class="fas fa-hashtag"></i>
+              <span class="d-none d-xl-inline">Explore</span>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fas fa-bell"></i> Notifications
+              <i class="fas fa-bell"></i>
+              <span class="d-none d-xl-inline">Notifications</span>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fas fa-envelope"></i> Messages
+              <i class="fas fa-envelope"></i>
+              <span class="d-none d-xl-inline">Messages</span>
             </a>
             <a
               href="../bookmarks/index.html"
               class="list-group-item list-group-item-action"
             >
-              <i class="fas fa-bookmark"></i> Bookmarks
+              <i class="fas fa-bookmark"></i>
+              <span class="d-none d-xl-inline">Bookmarks</span>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fas fa-list"></i> Lists
+              <i class="fas fa-list"></i>
+              <span class="d-none d-xl-inline">Lists</span>
             </a>
             <a
               href="../profile.html"
               class="list-group-item list-group-item-action"
             >
-              <i class="fas fa-user"></i> Profile
+              <i class="fas fa-user"></i>
+              <span class="d-none d-xl-inline">Profile</span>
             </a>
             <a href="#" class="list-group-item list-group-item-action ps-1">
               <span class="fa-stack">
                 <i class="fas fa-circle fa-stack-1x wd-circle-size"></i>
                 <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
               </span>
-              More
+              <span class="d-none d-xl-inline">More</span>
             </a>
             <a href="../tuit.html" class="mt-2 btn btn-primary rounded-pill"
               >Tuit</a
@@ -68,7 +75,7 @@
         </div>
 
         <!--main section with search bar, categories, and content-->
-        <div class="col-xxl-6">
+        <div class="col-10 col-md-9 col-lg-7 col-xl-6">
           <!--search bar and settings menu cog-->
           <div class="wd-header">
             <div class="input-group">
@@ -101,7 +108,7 @@
               <a class="nav-link" href="sports.html">Sports</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="entertainment.html">Entertainment</a>
+              <a class="nav-link d-none d-md-block" href="entertainment.html">Entertainment</a>
             </li>
           </ul>
 
@@ -120,9 +127,7 @@
             </div>
 
             <!--other posts-->
-            <div
-              class="list-group-item p-2 d-flex justify-content-between"
-            >
+            <div class="list-group-item p-2 d-flex justify-content-between">
               <ul>
                 <li class="text-secondary">Web Development</li>
                 <li>
@@ -142,9 +147,7 @@
               />
             </div>
 
-            <div
-              class="list-group-item p-2 d-flex justify-content-between"
-            >
+            <div class="list-group-item p-2 d-flex justify-content-between">
               <ul>
                 <li class="text-secondary">Web Development</li>
                 <li>
@@ -165,9 +168,7 @@
               />
             </div>
 
-            <div
-              class="list-group-item p-2 d-flex justify-content-between"
-            >
+            <div class="list-group-item p-2 d-flex justify-content-between">
               <ul>
                 <li class="text-secondary">Web Development</li>
                 <li class="text-dark fw-bold">jQuery</li>
@@ -180,9 +181,7 @@
               />
             </div>
 
-            <div
-              class="list-group-item p-2 d-flex justify-content-between"
-            >
+            <div class="list-group-item p-2 d-flex justify-content-between">
               <ul>
                 <li class="text-secondary">Web Development</li>
                 <li>
@@ -202,10 +201,10 @@
         </div>
 
         <!--right sidebar with links to other users you might want to follow-->
-        <div class="col-xxl-4">
+        <div class="d-none d-lg-block col-lg-4">
           <div class="list-group">
             <li class="list-group-item fw-bold">Who to follow</li>
-            <li class="list-group-item d-flex">
+            <li class="list-group-item d-flex align-items-center">
               <div>
                 <img
                   src="../images/java-logo.png"
@@ -213,7 +212,7 @@
                   class="wd-profile-pic rounded-circle"
                 />
               </div>
-              <div class="d-flex flex-column ps-2">
+              <div class="flex-shrink-0 d-flex flex-column ps-2">
                 <span class="fw-bold"
                   >Java <i class="fas fa-check-circle"></i
                 ></span>
@@ -223,7 +222,7 @@
                 Follow
               </button>
             </li>
-            <li class="list-group-item d-flex">
+            <li class="list-group-item d-flex align-items-center">
               <div>
                 <img
                   src="../images/relativity-space-logo.png"
@@ -231,7 +230,7 @@
                   class="wd-profile-pic rounded-circle"
                 />
               </div>
-              <div class="d-flex flex-column ps-2">
+              <div class="flex-shrink-0 d-flex flex-column ps-2">
                 <span class="fw-bold"
                   >Relativity Space <i class="fas fa-check-circle"></i
                 ></span>
@@ -241,7 +240,7 @@
                 Follow
               </button>
             </li>
-            <li class="list-group-item d-flex">
+            <li class="list-group-item d-flex align-items-center">
               <div>
                 <img
                   src="../images/virgin-galactic-logo.jpeg"
@@ -249,7 +248,7 @@
                   class="wd-profile-pic rounded-circle"
                 />
               </div>
-              <div class="d-flex flex-column ps-2">
+              <div class="flex-shrink-0 d-flex flex-column ps-2">
                 <span class="fw-bold"
                   >Virgin Galactic <i class="fas fa-check-circle"></i
                 ></span>
@@ -259,14 +258,14 @@
                 Follow
               </button>
             </li>
-            <li class="list-group-item d-flex">
+            <li class="list-group-item d-flex align-items-center">
               <div>
                 <img
                   src="../images/nasa-logo.webp"
                   class="wd-profile-pic rounded-circle"
                 />
               </div>
-              <div class="d-flex flex-column ps-2">
+              <div class="flex-shrink-0 d-flex flex-column ps-2">
                 <span class="fw-bold"
                   >NASA<i class="fas fa-check-circle"></i
                 ></span>
@@ -276,7 +275,7 @@
                 Follow
               </button>
             </li>
-            <li class="list-group-item d-flex">
+            <li class="list-group-item d-flex align-items-center">
               <div>
                 <img
                   src="../images/tesla-logo.jpeg"
@@ -284,7 +283,7 @@
                   class="wd-profile-pic rounded-circle"
                 />
               </div>
-              <div class="d-flex flex-column ps-2">
+              <div class="flex-shrink-0 d-flex flex-column ps-2">
                 <span class="fw-bold"
                   >Tesla <i class="fas fa-check-circle"></i
                 ></span>
