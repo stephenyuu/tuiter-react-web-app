@@ -89,17 +89,17 @@ ul {
 }
 
 .wd-picture-caption {
-    position: relative;
+    position: absolute;
     color: white;
-    bottom: 48px;
-    left: 8px;
+    bottom: 0px;
+    left: 6px;
 }
 
+/*
 .wd-reduce-whitespace {
     margin-top: -48px;
 }
 
-/*
 .wd-post {
     padding: 16px;
     border: 1px solid rgb(47, 51, 54);
