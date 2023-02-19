@@ -5,7 +5,8 @@ import ExploreComponent from "./ExploreComponent.js";
 function exploreComponent() {
   $("#wd-explore").append(
     `
-    <h2>Explore</h2>
+    <!--back button to return to navigation page-->
+    <a href="../navigation.html" class="btn btn-primary">Back</a>
     <div class="row mt-2">
       <div class="col-2 col-md-2 col-lg-1 col-xl-2">
         <!--<h3>NavigationSidebar</h3>-->
