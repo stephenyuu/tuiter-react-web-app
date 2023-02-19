@@ -5,7 +5,7 @@ const PostSummaryList = () => {
   return `
     <!--other posts-->
     <div class="list-group">
-      ${exploreItems.map((postItem) => PostSummaryItem(postItem, exploreItems.indexOf(postItem))).join('')}
+      ${exploreItems.map((postItem) => PostSummaryItem(postItem)).join('')}
     </div>
     `;
 };

@@ -1,4 +1,4 @@
-const PostSummaryItem = (post, postIndex) => {
+const PostSummaryItem = (post) => {
   return `
     <div class="list-group-item p-2 d-flex justify-content-between align-items-center">
         <ul>
