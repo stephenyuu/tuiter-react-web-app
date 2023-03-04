@@ -3,8 +3,8 @@ import "./index.css";
 
 const WhoToFollowListItem = ({
   who = {
-    userName: "Jaeson",
-    handle: "Jaeson",
+    userName: "NASA",
+    handle: "NASA",
     avatarIcon: "nasa-logo.webp",
   },
 }) => {
@@ -19,9 +19,9 @@ const WhoToFollowListItem = ({
       </div>
       <div className="flex-shrink-0 d-flex flex-column ps-2">
         <span className="fw-bold">
-          {who.userName} <i class="bi bi-check-circle-fill"></i>
+          {who.userName} <i className="bi bi-check-circle-fill"></i>
         </span>
-        {who.handle}
+        @{who.handle}
       </div>
       <button className="btn btn-primary rounded-pill ms-auto">Follow</button>
     </li>
