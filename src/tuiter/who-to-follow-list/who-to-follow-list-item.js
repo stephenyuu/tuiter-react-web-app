@@ -13,7 +13,7 @@ const WhoToFollowListItem = ({
       <div>
         <img
           className="wd-profile-pic rounded-circle"
-          src={`/src/assets/${who.avatarIcon}`}
+          src={`/images/${who.avatarIcon}`}
           alt={who.userName}
         />
       </div>

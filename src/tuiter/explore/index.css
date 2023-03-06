@@ -1,0 +1,35 @@
+.wd-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+.wd-search-bar-icon {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-right: none;
+}
+
+.wd-search-bar-container {
+    border-left: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.wd-cog-size {
+    font-size: 30px;
+}
+
+.wd-post-section {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.wd-picture-caption {
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    left: 6px;
+}
