@@ -6,11 +6,7 @@ import WhoToFollowList from "./who-to-follow-list";
 function Tuiter() {
   return (
     <div>
-      {/* back button to return to navigation page */}
-      <a href="../navigation.html" class="btn btn-primary">
-        Back
-      </a>
-
+      <Nav />
       {/* <div class='row'> with 3 <div class='col'> to create 3 columns of page */}
       <div class="row mt-2">
         {/* left navigation sidebar with links to various screens throughout Tuiter */}
