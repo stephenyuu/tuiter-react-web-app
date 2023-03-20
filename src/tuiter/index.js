@@ -6,8 +6,11 @@ import whoReducer from "./reducers/who-reducer";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import tuitsReducer from "./tuits/tuits-reducer";
+import TuitList from "./tuits";
 
-const store = configureStore({ reducer: { who: whoReducer, tuits: tuitsReducer} });
+const store = configureStore({
+  reducer: { who: whoReducer, tuits: tuitsReducer },
+});
 
 function Tuiter() {
   return (
@@ -35,6 +38,7 @@ function Tuiter() {
           </div>
         </div>
       </div>
+      <TuitList />
     </Provider>
   );
 }

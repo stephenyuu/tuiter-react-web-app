@@ -1,26 +1,44 @@
 [
-    {
-        "_id": 123, 
-        "topic": "Space", 
-        "userName": "SpaceX",
-        "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-        "time": "2h",
-        "image": "tesla-logo.jpeg" 
-    },
-    {
-        "_id": 234, 
-        "topic": "Space",
-        "userName": "SpaceX",
-        "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
-        "time": "2h",
-        "image": "spacex-logo.jpeg"
-    },
-    {
-        "_id": 345,
-        "topic": "Energy",
-        "userName": "Tesla",
-        "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
-        "time": "4d",
-        "image": "tesla-logo.jpeg" 
-    }
+  {
+    "_id": 123,
+    "topic": "Basketball",
+    "userName": "PrincetonBasketball",
+    "time": "2h",
+    "title": "Princeton Upsets Arizona in March Madness",
+    "image": "princeton-tigers-logo.jpeg",
+    "liked": true,
+    "replies": 888,
+    "retuits": 999,
+    "likes": "1B",
+    "handle": "@princetonbball",
+    "tuit": "In a thrilling upset, the Princeton Tigers have defeated the Arizona Wildcats in the first round of March Madness. Despite being the underdogs going into the game, Princeton came out strong and played with tenacity, keeping pace with Arizona throughout the entire match. The game came down to the wire, with both teams trading baskets in the final moments. But in the end, it was Princeton who emerged victorious, stunning the crowd and proving that anything can happen in the unpredictable world of March Madness."
+  },
+  {
+    "_id": 234,
+    "topic": "Tech",
+    "userName": "TimCook",
+    "time": "2h",
+    "title": "The Future of Apple: Innovating for a Better Tomorrow #AppleEvent",
+    "image": "tim-cook-pfp.webp",
+    "liked": false,
+    "replies": 1010,
+    "retuits": 8888,
+    "likes": "2B",
+    "handle": "@timcook",
+    "tuit": "Excited to unveil the latest innovations from Apple at our upcoming #AppleEvent. Our team has been working tirelessly to push the boundaries of technology and create products that make a positive impact on the world. From enhanced sustainability initiatives to cutting-edge advancements in AI, we can't wait to share what we have in store. Join us on March 19 to see the future of Apple and the ways in which we're innovating for a better tomorrow. #Innovation #Technology #Sustainability #AppleFamily"
+  },
+  {
+    "_id": 345,
+    "topic": "Food",
+    "userName": "GordonRamsay",
+    "time": "4d",
+    "title": "Mastering the Basics: A Beginner's Guide to Cooking with Chef Ramsay #CookingTips #MasterChef",
+    "image": "gordon-ramsay-pfp.jpeg",
+    "liked": false,
+    "replies": 777,
+    "retuits": 898,
+    "likes": 5000,
+    "handle": "@gordonramsay",
+    "tuit": "Whether you're a seasoned pro or just starting out in the kitchen, mastering the basics is essential for creating delicious meals. Join me on my new YouTube series where I'll be sharing my top tips for cooking like a pro. From knife skills to seasoning and everything in between, I'll show you how to elevate your dishes and take your cooking to the next level. Don't miss out on this opportunity to learn from the best. Tune in every Sunday for new episodes. Let's get cooking! "
+  }
 ]
