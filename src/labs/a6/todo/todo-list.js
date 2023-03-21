@@ -7,7 +7,7 @@ const ToDoList = () => {
         <h3>Todo List</h3>
         <ul>
             {todos.map(todo => {
-                return(<ToDoItem todo={todo}/>)
+                return(<ToDoItem key={new Date().getTime()} todo={todo}/>)
             })
             }
         </ul>
