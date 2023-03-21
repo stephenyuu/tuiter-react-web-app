@@ -3,10 +3,10 @@ import { useSelector } from "react-redux";
 import TuitItem from "./tuit-item";
 
 const TuitList = () => {
-  const tuitsArray = useSelector((state) => state.tuits);
+  const tuits = useSelector((state) => state.tuits);
   return (
     <div className="list-group">
-      {tuitsArray.map((tuit) => (
+      {tuits.map((tuit) => (
         <TuitItem key={tuit._id} tuit={tuit} />
       ))}
     </div>
