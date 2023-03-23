@@ -1,17 +1,26 @@
 import { createSlice } from "@reduxjs/toolkit";
-import initialTuits from "./tuits.json";
+import tuitsArray from "./tuits.json";
 
 const tuitsSlice = createSlice({
   name: "tuits",
-  initialState: initialTuits,
+  initialState: tuitsArray,
   reducers: {
-    updateTuitStats: (state, action) => {
-      state = state.map((tuit) =>
-        tuit._id === action.payload._id ? action.payload : tuit
+    dislikeTuit: (state, action) => {
+      const tuitIndex = state.findIndex(
+        (tuit) => tuit._id === action.payload._id
       );
+      state[tuitIndex].liked = false;
+      state[tuitIndex].likes = state[tuitIndex].likes - 1;
+    },
+    likeTuit: (state, action) => {
+      const tuitIndex = state.findIndex(
+        (tuit) => tuit._id === action.payload._id
+      );
+      state[tuitIndex].liked = true;
+      state[tuitIndex].likes = state[tuitIndex].likes + 1;
     },
   },
 });
 
 export default tuitsSlice.reducer;
-export const { updateTuitStats } = tuitsSlice.actions;
+export const { dislikeTuit, likeTuit } = tuitsSlice.actions;

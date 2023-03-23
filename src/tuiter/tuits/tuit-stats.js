@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { updateTuitStats } from "./tuits-reducer";
+import { dislikeTuit, likeTuit } from "./tuits-reducer";
 
 const TuitStats = ({
   tuit = {
@@ -11,17 +11,6 @@ const TuitStats = ({
   },
 }) => {
   const dispatch = useDispatch();
-  const handleHeartClick = () => {
-    console.log(tuit)
-    const newLikesCount = tuit.liked ? tuit.likes - 1 : tuit.likes + 1;
-    const newTuitStats = {
-      ...tuit,
-      liked: !tuit.liked,
-      likes: newLikesCount,
-    };
-    console.log(newTuitStats)
-    dispatch(updateTuitStats(newTuitStats));
-  };
 
   return (
     <ul className="d-flex justify-content-around align-items-center">
@@ -32,13 +21,11 @@ const TuitStats = ({
         <i className="bi bi-arrow-clockwise"></i> {tuit.retuits}
       </li>
       <li>
-        <i
-          onClick={handleHeartClick}
-          className={`bi ${
-            tuit.liked ? "bi-heart-fill text-danger" : "bi-heart"
-          }`}
-        ></i>{" "}
-        {tuit.likes}
+        {tuit.liked ? (
+          <i onClick={() => dispatch(dislikeTuit(tuit))} className="bi bi-heart-fill text-danger"></i>
+        ) : (
+          <i onClick={() => dispatch(likeTuit(tuit))} className="bi bi-heart"></i>
+        )} {tuit.likes}
       </li>
       <li>
         <i className="bi bi-share"></i>
