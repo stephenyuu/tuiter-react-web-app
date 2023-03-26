@@ -4,7 +4,7 @@ import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import store from "./reducers/store";
 
-function TuiterGenericLayout({ children, active }) {
+function TuiterLayoutTemplate({ children, active }) {
   return (
     <Provider store={store}>
       <div>
@@ -33,4 +33,4 @@ function TuiterGenericLayout({ children, active }) {
     </Provider>
   );
 }
-export default TuiterGenericLayout;
+export default TuiterLayoutTemplate;

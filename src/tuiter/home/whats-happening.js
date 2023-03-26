@@ -1,16 +1,23 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import "../../styles/styles.css";
+import { createTuit } from "../tuits/tuits-reducer";
 
 const WhatsHappening = () => {
   const [whatsHappening, setWhatsHappening] = useState("");
+  const dispatch = useDispatch();
   const tuitClickHandler = () => {
-    console.log(whatsHappening);
+    const newTuit = {
+      tuit: whatsHappening,
+    };
+    dispatch(createTuit(newTuit));
   };
   return (
     <div className="row border border-0">
       <div className="col-auto">
         <img
           src="/images/tuiter-ceo-pfp.jpeg"
+          alt="Elon Musk Profile Pic"
           className="rounded-circle wd-profile-pic"
         />
       </div>

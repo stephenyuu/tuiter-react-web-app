@@ -1,11 +1,11 @@
 import React from "react";
 import "./index.css";
 import PostSummaryList from "../post-summary-list";
-import TuiterGenericLayout from "..";
+import TuiterLayoutTemplate from "..";
 
 const ExploreComponent = () => {
   return (
-    <TuiterGenericLayout active="explore">
+    <TuiterLayoutTemplate active="explore">
       <>
         {/* search bar and settings menu cog */}
         <div className="wd-header">
@@ -57,7 +57,7 @@ const ExploreComponent = () => {
           <PostSummaryList />
         </div>
       </>
-    </TuiterGenericLayout>
+    </TuiterLayoutTemplate>
   );
 };
 
