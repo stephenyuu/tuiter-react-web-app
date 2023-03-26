@@ -30,7 +30,7 @@ function TuiterLayoutTemplate({ children, active }) {
           </div>
         </div>
       </div>
-    </Provider>
+    </Provider> 
   );
 }
 export default TuiterLayoutTemplate;
