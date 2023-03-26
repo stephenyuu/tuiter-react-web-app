@@ -1,12 +1,10 @@
 import { Provider } from "react-redux";
 import Nav from "../nav";
-import ExploreComponent from "./explore";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
-import TuitList from "./tuits";
 import store from "./reducers/store";
 
-function Tuiter() {
+function TuiterGenericLayout({ children, active }) {
   return (
     <Provider store={store}>
       <div>
@@ -16,13 +14,13 @@ function Tuiter() {
           {/* left navigation sidebar with links to various screens throughout Tuiter */}
           <div className="col-2 col-md-2 col-lg-1 col-xl-2">
             {/* <h3>NavigationSidebar</h3> */}
-            <NavigationSidebar />
+            <NavigationSidebar active={active} />
           </div>
 
           {/* main section with search bar, categories, and content */}
           <div className="col-10 col-lg-7 col-xl-6">
             {/* <h3>ExploreComponent</h3> */}
-            <ExploreComponent />
+            {children}
           </div>
 
           {/* right sidebar with links to other users you might want to follow */}
@@ -32,8 +30,7 @@ function Tuiter() {
           </div>
         </div>
       </div>
-      <TuitList />
     </Provider>
   );
 }
-export default Tuiter;
+export default TuiterGenericLayout;
