@@ -5,7 +5,7 @@ import whoReducer from "./who-reducer";
 const store = configureStore({
   reducer: {
     who: whoReducer,
-    tuits: tuitsReducer,
+    tuitsData: tuitsReducer,
   },
 });
 

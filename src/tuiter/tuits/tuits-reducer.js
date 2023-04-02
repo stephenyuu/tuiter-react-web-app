@@ -1,6 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
-import tuitsArray from "./tuits.json";
+import {
+  createTuitThunk,
+  deleteTuitThunk,
+  findTuitsThunk,
+  updateTuitThunk,
+} from "../../services/tuits-thunks";
 
+const initialState = {
+  tuits: [],
+  loading: false,
+};
+
+/*
 const currentUser = {
   userName: "ElonMusk",
   handle: "@elonmusk",
@@ -16,11 +27,13 @@ const templateTuit = {
   retuits: 0,
   likes: 0,
 };
+*/
 
 const tuitsSlice = createSlice({
   name: "tuits",
-  initialState: tuitsArray,
+  initialState,
   reducers: {
+    /*
     deleteTuit: (state, action) => {
       const index = state.findIndex(tuit => tuit._id === action.payload);
       state.splice(index, 1);
@@ -45,9 +58,40 @@ const tuitsSlice = createSlice({
       );
       state[tuitIndex].liked = true;
       state[tuitIndex].likes = state[tuitIndex].likes + 1;
+      */
+  },
+  extraReducers: {
+    [findTuitsThunk.pending]: (state) => {
+      state.loading = true;
+      state.tuits = [];
+    },
+    [findTuitsThunk.fulfilled]: (state, { payload }) => {
+      state.loading = false;
+      state.tuits = payload;
+    },
+    [findTuitsThunk.rejected]: (state, action) => {
+      state.loading = false;
+      state.error = action.error;
+    },
+    [deleteTuitThunk.fulfilled]: (state, { payload }) => {
+      state.loading = false;
+      state.tuits = state.tuits.filter((t) => t._id !== payload);
+    },
+    [createTuitThunk.fulfilled]: (state, { payload }) => {
+      state.loading = false;
+      state.tuits.unshift(payload);
+    },
+    [updateTuitThunk.fulfilled]: (state, { payload }) => {
+      state.loading = false;
+      const tuitNdx = state.tuits.findIndex((t) => t._id === payload._id);
+      state.tuits[tuitNdx] = {
+        ...state.tuits[tuitNdx],
+        ...payload,
+      };
     },
   },
 });
 
 export default tuitsSlice.reducer;
-export const { dislikeTuit, likeTuit, createTuit, deleteTuit } = tuitsSlice.actions;
+export const { dislikeTuit, likeTuit, createTuit, deleteTuit } =
+  tuitsSlice.actions;
