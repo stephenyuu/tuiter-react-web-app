@@ -18,7 +18,7 @@ function App() {
         </Routes>
       </div>
     </BrowserRouter>
-  );
+  ); 
 }
 
 export default App;
